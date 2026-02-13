@@ -218,6 +218,57 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Resources Section */}
+      <section className="bg-gray-50 py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              EV Charger Resources
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Expert guides to help you make the right decision for your Austin home
+            </p>
+          </div>
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <Link href="/blog/ev-charger-cost-austin" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md">
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-ev-green">
+                How Much Does an EV Charger Cost in Austin?
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Complete breakdown of installation costs, equipment prices, and potential savings.
+              </p>
+              <span className="mt-4 inline-block text-ev-green font-medium">Read more →</span>
+            </Link>
+            <Link href="/blog/austin-ev-charger-rebates" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md">
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-ev-green">
+                Austin EV Charger Rebates & Incentives
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Get up to $1,500 back with Austin Energy rebates plus federal tax credits.
+              </p>
+              <span className="mt-4 inline-block text-ev-green font-medium">Read more →</span>
+            </Link>
+            <Link href="/blog/best-ev-chargers-austin" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md">
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-ev-green">
+                Best EV Chargers for Austin Homeowners
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Top-rated Level 2 chargers that handle Austin's heat and work with local utilities.
+              </p>
+              <span className="mt-4 inline-block text-ev-green font-medium">Read more →</span>
+            </Link>
+          </div>
+          <div className="mt-10 text-center">
+            <Link href="/blog" className="inline-flex items-center text-lg font-semibold text-ev-green hover:text-ev-green-dark">
+              View All Resources
+              <svg className="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
