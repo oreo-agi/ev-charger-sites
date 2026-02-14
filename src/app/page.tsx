@@ -269,6 +269,92 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Austin EV Charger Installation",
+            "image": "https://evchargeraustin.com/og-image.png",
+            "url": "https://evchargeraustin.com",
+            "telephone": "+1-512-555-0100",
+            "priceRange": "$800-$2500",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "",
+              "addressLocality": "Austin",
+              "addressRegion": "TX",
+              "postalCode": "78701",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 30.2672,
+              "longitude": -97.7431
+            },
+            "areaServed": {
+              "@type": "GeoCircle",
+              "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 30.2672,
+                "longitude": -97.7431
+              },
+              "geoRadius": "50000"
+            },
+            "description": "Professional EV charger installation in Austin, TX. Licensed electricians, same-week scheduling. Level 2 home charging, Tesla Wall Connector & more.",
+            "serviceType": ["EV Charger Installation", "Level 2 Charger Installation", "Electric Vehicle Charging Station Installation"],
+            "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-17:00"
+          })
+        }}
+      />
+
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does EV charger installation cost in Austin?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most Austin EV charger installations cost between $800 and $2,500, including the charger unit, electrical work, permits, and labor. The exact cost depends on your electrical panel capacity, distance from the panel to your garage, and whether you need a panel upgrade."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I get rebates for EV charger installation in Austin?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! Austin Energy offers up to $1,200 in rebates for residential EV charger installations. There's also a federal tax credit of up to 30% of installation costs (up to $1,000). Combined, you could save $2,200 or more."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does EV charger installation take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most installations are completed in 4-6 hours for a straightforward setup. If you need an electrical panel upgrade, it may take 1-2 days. We typically schedule installations within the same week."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need a permit for EV charger installation in Austin?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, all EV charger installations in Austin require an electrical permit from the City of Austin. Licensed electricians handle the permitting process and ensure the installation meets all local codes and NEC requirements."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </>
   );
 }
