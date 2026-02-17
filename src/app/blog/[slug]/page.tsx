@@ -4,6 +4,9 @@ import matter from 'gray-matter';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
+import type { Metadata } from 'next';
+
+const BASE_URL = 'https://austinevcharger.com';
 
 interface ArticlePageProps {
   params: {
@@ -43,6 +46,27 @@ function getArticleBySlug(slug: string) {
     date: data.date || '2026-02-08',
     readTime,
     description: data.description || ''
+  };
+}
+
+export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
+  const article = getArticleBySlug(params.slug);
+  if (!article) return {};
+
+  return {
+    title: article.title,
+    description: article.description || `${article.title} - Expert EV charger installation guide for Austin, TX homeowners.`,
+    openGraph: {
+      title: article.title,
+      description: article.description || `${article.title} - Expert EV charger installation guide for Austin, TX homeowners.`,
+      type: 'article',
+      url: `${BASE_URL}/blog/${params.slug}`,
+      publishedTime: article.date,
+      siteName: 'AustinEVCharger',
+    },
+    alternates: {
+      canonical: `${BASE_URL}/blog/${params.slug}`,
+    },
   };
 }
 
@@ -164,6 +188,40 @@ export default function ArticlePage({ params }: ArticlePageProps) {
           </Link>
         </div>
       </article>
+
+      {/* Article JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": article.title,
+            "description": article.description || `${article.title} - Expert EV charger installation guide for Austin, TX homeowners.`,
+            "author": {
+              "@type": "Organization",
+              "name": "AustinEVCharger",
+              "url": BASE_URL
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AustinEVCharger",
+              "url": BASE_URL
+            },
+            "datePublished": article.date,
+            "dateModified": article.date,
+            "url": `${BASE_URL}/blog/${article.slug}`,
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `${BASE_URL}/blog/${article.slug}`
+            },
+            "about": {
+              "@type": "Thing",
+              "name": "EV Charger Installation Austin TX"
+            }
+          })
+        }}
+      />
     </div>
   );
 }

@@ -278,8 +278,8 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Austin EV Charger Installation",
-            "image": "https://evchargeraustin.com/og-image.png",
-            "url": "https://evchargeraustin.com",
+            "image": "https://austinevcharger.com/og-image.png",
+            "url": "https://austinevcharger.com",
             "telephone": "+1-512-555-0100",
             "priceRange": "$800-$2500",
             "address": {

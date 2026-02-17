@@ -3,14 +3,15 @@ import fs from 'fs'
 import path from 'path'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://evchargeraustin.com'
+  const baseUrl = 'https://austinevcharger.com'
   
   // Get all blog posts
   const contentDir = path.join(process.cwd(), 'content', 'articles')
   const blogFiles = fs.readdirSync(contentDir).filter(file => file.endsWith('.md'))
   
   const blogPosts = blogFiles.map(file => ({
-    url: `${baseUrl}/blog/${file.replace('.md', '')}`,
+    // Strip numeric prefix (e.g., "01-ev-charger-cost-austin.md" → "ev-charger-cost-austin")
+    url: `${baseUrl}/blog/${file.replace(/^\d+-/, '').replace('.md', '')}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
@@ -20,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'daily',
+      changeFrequency: 'daily' as const,
       priority: 1,
     },
     {

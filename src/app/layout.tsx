@@ -33,11 +33,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "AustinEV",
+    siteName: "AustinEVCharger",
+    url: "https://austinevcharger.com",
     title: "Austin EV Charger Installation | Licensed Electricians",
     description:
       "Professional EV charger installation in Austin, TX. Licensed electricians, $800-$2,500 typical cost. Free quotes & Austin Energy rebate assistance.",
   },
+  alternates: {
+    canonical: "https://austinevcharger.com",
+  },
+  metadataBase: new URL("https://austinevcharger.com"),
 };
 
 export default function RootLayout({
