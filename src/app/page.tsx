@@ -231,6 +231,16 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <Link href="/installers" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md border-l-4 border-ev-green">
+              <div className="mb-2 inline-block rounded-full bg-ev-green/10 px-2 py-0.5 text-xs font-semibold text-ev-green">New</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-ev-green">
+                Best EV Charger Installers in Austin
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Compare top-rated, licensed electricians. Get quotes from Austin's best EV charger installation companies.
+              </p>
+              <span className="mt-4 inline-block text-ev-green font-medium">Compare installers →</span>
+            </Link>
             <Link href="/blog/ev-charger-cost-austin" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md">
               <h3 className="text-xl font-bold text-gray-900 group-hover:text-ev-green">
                 How Much Does an EV Charger Cost in Austin?
@@ -246,15 +256,6 @@ export default function Home() {
               </h3>
               <p className="mt-2 text-gray-600">
                 Get up to $1,500 back with Austin Energy rebates plus federal tax credits.
-              </p>
-              <span className="mt-4 inline-block text-ev-green font-medium">Read more →</span>
-            </Link>
-            <Link href="/blog/best-ev-chargers-austin" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md">
-              <h3 className="text-xl font-bold text-gray-900 group-hover:text-ev-green">
-                Best EV Chargers for Austin Homeowners
-              </h3>
-              <p className="mt-2 text-gray-600">
-                Top-rated Level 2 chargers that handle Austin's heat and work with local utilities.
               </p>
               <span className="mt-4 inline-block text-ev-green font-medium">Read more →</span>
             </Link>

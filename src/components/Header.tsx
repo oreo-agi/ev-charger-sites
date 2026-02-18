@@ -5,10 +5,10 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
+  { href: "/installers", label: "Find Installer" },
   { href: "/cost-calculator", label: "Cost Calculator" },
-  { href: "/installation-guide", label: "Installation Guide" },
   { href: "/incentives", label: "Incentives" },
-  { href: "/compare", label: "Compare Chargers" },
+  { href: "/blog", label: "Guides" },
   { href: "/get-quote", label: "Get a Quote" },
 ];
 
