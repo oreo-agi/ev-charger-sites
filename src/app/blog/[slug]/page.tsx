@@ -9,9 +9,9 @@ import type { Metadata } from 'next';
 const BASE_URL = 'https://austinevcharger.com';
 
 interface ArticlePageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 function getArticleBySlug(slug: string) {
@@ -50,7 +50,8 @@ function getArticleBySlug(slug: string) {
 }
 
 export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
-  const article = getArticleBySlug(params.slug);
+  const { slug } = await params;
+  const article = getArticleBySlug(slug);
   if (!article) return {};
 
   return {
@@ -60,12 +61,12 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       title: article.title,
       description: article.description || `${article.title} - Expert EV charger installation guide for Austin, TX homeowners.`,
       type: 'article',
-      url: `${BASE_URL}/blog/${params.slug}`,
+      url: `${BASE_URL}/blog/${slug}`,
       publishedTime: article.date,
       siteName: 'AustinEVCharger',
     },
     alternates: {
-      canonical: `${BASE_URL}/blog/${params.slug}`,
+      canonical: `${BASE_URL}/blog/${slug}`,
     },
   };
 }
@@ -81,8 +82,9 @@ export async function generateStaticParams() {
     }));
 }
 
-export default function ArticlePage({ params }: ArticlePageProps) {
-  const article = getArticleBySlug(params.slug);
+export default async function ArticlePage({ params }: ArticlePageProps) {
+  const { slug } = await params;
+  const article = getArticleBySlug(slug);
   
   if (!article) {
     notFound();
