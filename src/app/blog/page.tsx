@@ -1,7 +1,22 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+
+export const metadata: Metadata = {
+  title: 'EV Charger Installation Guides for Austin, TX | AustinEVCharger.com',
+  description: 'Expert guides on EV charger installation costs, rebates, permits, and installation tips for Austin, TX homeowners. Stay current with 2026 incentives and local codes.',
+  openGraph: {
+    title: 'EV Charger Resources & Guides for Austin, TX',
+    description: 'Comprehensive guides on home EV charger installation, Austin Energy rebates, permit process, HOA rules, and more.',
+    url: 'https://austinevcharger.com/blog',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://austinevcharger.com/blog',
+  },
+};
 
 interface ArticleMeta {
   slug: string;
