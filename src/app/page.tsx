@@ -231,8 +231,17 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <Link href="/installers" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md border-l-4 border-ev-green">
+            <Link href="/faq" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md border-l-4 border-ev-green">
               <div className="mb-2 inline-block rounded-full bg-ev-green/10 px-2 py-0.5 text-xs font-semibold text-ev-green">New</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-ev-green">
+                Austin EV Charger Installation FAQ
+              </h3>
+              <p className="mt-2 text-gray-600">
+                40+ common questions answered: costs, permits, rebates, technical requirements, HOA rules, and more.
+              </p>
+              <span className="mt-4 inline-block text-ev-green font-medium">Browse FAQ →</span>
+            </Link>
+            <Link href="/installers" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md">
               <h3 className="text-xl font-bold text-gray-900 group-hover:text-ev-green">
                 Best EV Charger Installers in Austin
               </h3>
@@ -247,15 +256,6 @@ export default function Home() {
               </h3>
               <p className="mt-2 text-gray-600">
                 Complete breakdown of installation costs, equipment prices, and potential savings.
-              </p>
-              <span className="mt-4 inline-block text-ev-green font-medium">Read more →</span>
-            </Link>
-            <Link href="/blog/austin-ev-charger-rebates" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md">
-              <h3 className="text-xl font-bold text-gray-900 group-hover:text-ev-green">
-                Austin EV Charger Rebates & Incentives
-              </h3>
-              <p className="mt-2 text-gray-600">
-                Get up to $1,500 back with Austin Energy rebates plus federal tax credits.
               </p>
               <span className="mt-4 inline-block text-ev-green font-medium">Read more →</span>
             </Link>
