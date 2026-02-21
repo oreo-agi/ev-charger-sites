@@ -231,8 +231,17 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <Link href="/faq" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md border-l-4 border-ev-green">
-              <div className="mb-2 inline-block rounded-full bg-ev-green/10 px-2 py-0.5 text-xs font-semibold text-ev-green">New</div>
+            <Link href="/charger-quiz" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md border-l-4 border-ev-green">
+              <div className="mb-2 inline-block rounded-full bg-ev-green/10 px-2 py-0.5 text-xs font-semibold text-ev-green">Interactive Tool</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-ev-green">
+                Which EV Charger Should I Buy?
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Take our 2-minute quiz to find the perfect charger for your EV, budget, and home setup. Personalized recommendations + installation cost estimates.
+              </p>
+              <span className="mt-4 inline-block text-ev-green font-medium">Take the Quiz →</span>
+            </Link>
+            <Link href="/faq" className="group rounded-lg bg-white p-6 shadow-sm transition hover:shadow-md">
               <h3 className="text-xl font-bold text-gray-900 group-hover:text-ev-green">
                 Austin EV Charger Installation FAQ
               </h3>
