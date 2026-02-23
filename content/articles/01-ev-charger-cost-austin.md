@@ -16,7 +16,7 @@ The good news? Federal tax credits can offset 30% of these costs, and Austin Ene
 
 ## Understanding the Three Types of EV Chargers
 
-Before diving into costs, let's clarify what type of charger you actually need.
+Before diving into costs, let's clarify what type of charger you actually need. For a detailed comparison, see our [Level 2 vs Level 1 charger guide](/blog/level-2-vs-level-1-charger).
 
 ### Level 1 Charging (120V)
 
@@ -76,13 +76,13 @@ The charger itself (also called EVSE - Electric Vehicle Supply Equipment) ranges
 - Examples: ChargePoint Home Flex, JuiceBox 40
 
 **Premium ($800-1,200):**
-- Tesla Wall Connector
+- [Tesla Wall Connector](/blog/tesla-wall-connector-austin)
 - Advanced load management
 - Sleek design
 - Weather resistance rated for Texas heat
 - 48-60 amp capacity
 
-**Austin tip:** Consider WiFi-enabled chargers so you can schedule charging during Austin Energy's cheapest hours (typically 11 PM - 6 AM).
+**Austin tip:** Consider WiFi-enabled chargers so you can schedule charging during [Austin Energy's cheapest hours](/blog/austin-energy-ev-charging-rates) (typically 11 PM - 6 AM). For help choosing the right charger, see our [best EV chargers for Austin guide](/blog/best-ev-chargers-austin).
 
 ### 2. Labor & Installation: $300 - $3,000+
 
@@ -114,7 +114,7 @@ This is where costs vary most, depending on your home's setup:
 
 ### 3. Permits & Inspections: $50 - $200
 
-Austin requires electrical permits for EV charger installations. Your electrician should handle this, but costs include:
+Austin requires electrical permits for EV charger installations. Your electrician should handle this, but costs include (see our [complete permit guide](/blog/austin-ev-charger-permit-process) for details):
 
 - City of Austin electrical permit: $63-120 (depending on project scope)
 - Inspection fee: Often included, but budget $50 extra for re-inspection if needed
@@ -135,7 +135,7 @@ Austin code requires outdoor installations to be weatherproof and properly groun
 
 ## Electrical Panel Upgrade Costs
 
-Here's the big variable: Does your home's electrical panel have capacity for an EV charger?
+Here's the big variable: Does your home's electrical panel have capacity for an EV charger? For a comprehensive guide, see our [electrical panel upgrade article](/blog/electrical-panel-upgrade-ev-charger).
 
 ### Do You Need an Upgrade?
 
@@ -276,7 +276,7 @@ The Inflation Reduction Act provides a 30% tax credit on EV charger hardware and
 
 ### 2. Austin Energy Rebates
 
-Austin Energy has historically offered EV charger rebates (check current programs):
+Austin Energy has historically offered EV charger rebates. For complete details on all available incentives, see our [Austin EV charger rebates guide](/blog/austin-ev-charger-rebates):
 - Residential charger rebates: Up to $300 (varies by program year)
 - Time-of-use rate plans: Save $200-400 annually charging overnight
 - Must be Austin Energy customer (not available in all surrounding areas)
@@ -382,6 +382,16 @@ Ready to install your EV charger? Here's the smart approach:
 Installing a home EV charger is one of the best investments Austin EV owners make. With federal tax credits, potential Austin Energy rebates, and the long-term savings on fuel, your charger can pay for itself within a year—while making your daily life significantly more convenient.
 
 Don't wait—join thousands of Austin homeowners already enjoying the convenience of home EV charging.
+
+## Related Articles
+
+- [Best EV Chargers for Austin Homeowners](/blog/best-ev-chargers-austin)
+- [Austin EV Charger Rebates and Incentives](/blog/austin-ev-charger-rebates)
+- [Level 2 vs Level 1 EV Charger Comparison](/blog/level-2-vs-level-1-charger)
+- [Electrical Panel Upgrade Guide for EV Chargers](/blog/electrical-panel-upgrade-ev-charger)
+- [Austin EV Charger Permit Process](/blog/austin-ev-charger-permit-process)
+- [Tesla Wall Connector Installation in Austin](/blog/tesla-wall-connector-austin)
+- [Austin Energy EV Charging Rates Guide](/blog/austin-energy-ev-charging-rates)
 
 ---
 

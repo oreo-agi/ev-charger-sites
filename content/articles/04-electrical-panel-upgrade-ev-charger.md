@@ -592,3 +592,12 @@ Get the right answer for your specific Austin home. Free quote, no pressure, jus
 ---
 
 *Last updated: February 2026. Electrical codes and Austin Energy procedures subject to change. Always use licensed Texas electricians and obtain proper City of Austin permits. This guide is informational—consult professionals for specific electrical assessments.*
+
+## Related Articles
+
+- [EV Charger Installation Cost in Austin](/blog/ev-charger-cost-austin) - Total cost including panel upgrades
+- [Austin EV Charger Permit Process](/blog/austin-ev-charger-permit-process) - Permits for panel upgrades
+- [Best EV Chargers for Austin Homeowners](/blog/best-ev-chargers-austin) - Which chargers work with your panel
+- [Austin EV Charger Rebates](/blog/austin-ev-charger-rebates) - Federal tax credits cover panel upgrades
+- [Level 2 vs Level 1 EV Charger](/blog/level-2-vs-level-1-charger) - Panel requirements for each level
+- [NEMA 14-50 vs Hardwired](/blog/nema-14-50-vs-hardwired-ev-charger) - Installation options
